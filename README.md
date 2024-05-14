@@ -12,8 +12,7 @@ from temp_mail import TempMail
 from time import sleep
 
 def test_temp_mail():
-    temp_mail = TempMail()
-    mail_box = temp_mail.mailbox()
+    mail_box = TempMail.mailbox()
 
     print(f'Your mail : {mail_box.mailbox}\nYour token : {mail_box.token}')
     print(f'Ваша почта : {mail_box.mailbox}\nВаш токен : {mail_box.token}')
@@ -24,7 +23,7 @@ def test_temp_mail():
 
         print(f'Messages : {messages}')
         print(f'Сообщения : {messages}')
-        
+
 test_temp_mail()
 ```
 </details>
